@@ -1,0 +1,91 @@
+/* Services.css */
+
+.services {
+    padding: 60px 20px;
+    /* Ample padding for readability and spacing */
+    background-color: #F5F7FA;
+    /* Light Gray background for a clean look */
+    color: #4A4A4A;
+    /* Dark Gray text for contrast and readability */
+    text-align: center;
+    /* Center-align text for a balanced look */
+    font-family: 'Open Sans', sans-serif;
+    /* Consistent, modern font */
+}
+
+.services h1 {
+    color: #4A90E2;
+    /* Primary Blue for the heading */
+    margin-bottom: 40px;
+    /* Spacing below the heading */
+}
+
+.service-list {
+    display: flex;
+    /* Use flexbox for the service items layout */
+    flex-wrap: wrap;
+    /* Allow items to wrap for responsiveness */
+    justify-content: center;
+    /* Center service items */
+    gap: 20px;
+    /* Space between service items */
+}
+
+.service-item {
+    width: calc(33.333% - 20px);
+    /* Three items per row with gap */
+    background-color: #FFFFFF;
+    /* White background for each service card */
+    padding: 20px;
+    /* Padding inside service cards */
+    border-radius: 8px;
+    /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    /* Smooth transform transition for hover effect */
+    cursor: pointer;
+    /* Indicates the item is clickable */
+    transition: all 0.5s ease;
+    text-align: left;
+}
+
+
+
+.service-item img {
+    max-width: 100%; /* Ensure the image is responsive and fits its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Rounded corners for the images */
+    margin-bottom: 15px; /* Space between the image and the service title */
+  }
+
+.service-item:hover {
+    transform: translateY(-10px);
+    background-color: #f0f0f0;
+}
+
+.service-item h2 {
+    color: #50E3C2;
+    /* Secondary color for service titles */
+    margin-bottom: 15px;
+    /* Space below the service title */
+}
+
+.service-item p {
+    text-align: left;
+    /* Align text to the left for readability */
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 1024px) {
+    .service-item {
+        width: calc(50% - 20px);
+        /* Two items per row on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .service-item {
+        width: 100%;
+        /* Full width for small screens */
+    }
+}

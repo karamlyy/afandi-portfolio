@@ -1,0 +1,121 @@
+/* Contact.css */
+
+.contact {
+    padding: 60px 20px;
+    /* Ample padding for readability and spacing */
+    background-color: #F5F7FA;
+    /* Light Gray background for a clean look */
+    color: #4A4A4A;
+    /* Dark Gray text for contrast and readability */
+    font-family: 'Open Sans', sans-serif;
+    /* Consistent, modern font */
+}
+
+.contact h1 {
+    color: #4A90E2;
+    /* Primary Blue for the heading */
+    text-align: center;
+    /* Center-align the heading for emphasis */
+    margin-bottom: 40px;
+    /* Spacing below the heading */
+}
+
+.contact-info {
+    text-align: center;
+    /* Center-align contact info for a balanced look */
+    margin-bottom: 40px;
+    /* Spacing before the contact form starts */
+}
+
+.contact-info p,
+.contact-info a {
+    color: #4A90E2;
+    /* Primary Blue for emphasis and consistency */
+    margin: 10px 0;
+    /* Vertical spacing for readability */
+}
+
+.contact-info a {
+    text-decoration: none;
+    /* Remove underline from links */
+    transition: color 0.2s;
+    /* Smooth transition for hover effect */
+}
+
+.contact-info a:hover {
+    color: #50E3C2;
+    /* Secondary color for hover state */
+}
+
+.contact-form {
+    max-width: 600px;
+    /* Limit form width for aesthetics and usability */
+    margin: 0 auto;
+    /* Center the form in the section */
+    background-color: #FFFFFF;
+    /* White background for the form */
+    padding: 30px;
+    /* Padding inside the form */
+    border-radius: 8px;
+    /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+}
+
+.contact-form form {
+    display: flex;
+    /* Use flex layout for form elements */
+    flex-direction: column;
+    /* Stack form elements vertically */
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    /* Space between label and input */
+    color: #4A4A4A;
+    /* Dark Gray for readability */
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    /* Padding inside input and textarea for comfort */
+    margin-bottom: 20px;
+    /* Spacing between form elements */
+    border: 1px solid #E6E9EC;
+    /* Subtle border for inputs */
+    border-radius: 4px;
+    /* Slightly rounded borders for inputs */
+    outline-color: #4A90E2;
+    /* Primary Blue for focus outline */
+}
+
+.contact-form button {
+    background-color: #4A90E2;
+    /* Primary Blue for the button */
+    color: #FFFFFF;
+    /* White text for contrast */
+    padding: 10px 0;
+    /* Padding for the button size */
+    border: none;
+    /* Remove button border */
+    border-radius: 4px;
+    /* Rounded corners for the button */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.2s;
+    /* Smooth transition for hover effect */
+}
+
+.contact-form button:hover {
+    background-color: #3C7CC9;
+    /* Slightly darker blue on hover */
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 20px;
+        /* Slightly reduce padding on smaller screens */
+    }
+}

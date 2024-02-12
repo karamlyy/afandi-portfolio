@@ -1,0 +1,75 @@
+/* Home.css */
+
+.home {
+    padding: 40px 20px;
+    background-color: #F5F7FA;
+    /* Light Gray background */
+    color: #4A4A4A;
+    /* Dark Gray text */
+    text-align: center;
+    /* Center align the content for a modern look */
+}
+
+.home h1 {
+    color: #4A90E2;
+    /* Blue for the main heading */
+    font-size: 2.5rem;
+    /* Larger font size for emphasis */
+    margin-bottom: 20px;
+    /* Spacing below the heading */
+}
+
+.home p {
+    font-size: 1.1rem;
+    /* Slightly larger font size for readability */
+    max-width: 800px;
+    /* Limit the width of paragraphs for better readability */
+    margin: 0 auto 20px;
+    /* Center the paragraphs with margin for spacing */
+    line-height: 1.6;
+    /* Improve readability with increased line height */
+}
+
+/* Highlighted Text - Use for important phrases or calls to action */
+.home .highlight {
+    color: #50E3C2;
+    /* Turquoise for highlighted text */
+    font-weight: bold;
+    /* Make highlighted text bold */
+}
+
+/* Button - Use for primary call to action */
+.home .btn {
+    display: inline-block;
+    /* Allows setting padding and margins */
+    background-color: #4A90E2;
+    /* Blue background for the button */
+    color: #FFFFFF;
+    /* White text for contrast */
+    padding: 10px 20px;
+    /* Padding for size */
+    border-radius: 5px;
+    /* Rounded corners for a modern look */
+    text-decoration: none;
+    /* Remove underline from link */
+    transition: background-color 0.3s;
+    /* Smooth transition for hover effect */
+}
+
+.home .btn:hover {
+    background-color: #3C7CC9;
+    /* Slightly darker blue on hover for feedback */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .home h1 {
+        font-size: 2rem;
+        /* Slightly smaller font size for small devices */
+    }
+
+    .home p {
+        font-size: 1rem;
+        /* Adjust font size for readability on small devices */
+    }
+}

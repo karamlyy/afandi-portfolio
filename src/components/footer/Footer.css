@@ -1,0 +1,23 @@
+.footer {
+    background-color: #4A90E2;
+    /* Primary color */
+    color: white;
+    text-align: center;
+    position: fixed;
+    /* Fix position to the bottom */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    /* Ensure footer is above other content */
+}
+
+
+
+.footer-bottom {
+    background-color: #3C7CC9;
+    /* Slightly darker shade for contrast */
+    padding: 10px 0;
+    font-size: 0.8rem;
+    width: 100%;
+}

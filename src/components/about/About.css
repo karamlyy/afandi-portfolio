@@ -1,89 +1,102 @@
-/* About.css */
-
 .about {
     padding: 60px 20px;
-    /* Ample padding for readability and spacing */
     background-color: #F5F7FA;
-    /* Light Gray background for a clean look */
     color: #4A4A4A;
-    /* Dark Gray text for contrast and readability */
     font-family: 'Open Sans', sans-serif;
-    /* Modern, readable font */
+}
+
+.about-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-text {
+    flex-basis: 50%;
+}
+
+.about-image {
+    flex-basis: 50%;
+    text-align: center;
+    /* Align the image to the right side */
+}
+
+.about-image img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    
 }
 
 .about h1,
 .about h2 {
     color: #4A90E2;
-    /* Primary Blue for headings */
     text-align: center;
-    /* Center-align headings for emphasis */
 }
 
 .about p {
-    max-width: 800px;
-    /* Limit the width for better readability */
+    max-width: 600px;
     margin: 20px auto;
-    /* Center the paragraph with vertical spacing */
     line-height: 1.6;
-    /* Improve readability with increased line height */
     text-align: justify;
-    /* Justify text for a neat, aligned appearance */
 }
 
-/* Styling for the personal/professional background section */
 .background-section {
     margin-top: 30px;
-    /* Add some space above the section */
 }
 
-/* Styling for the education section */
 .education-section {
     margin-top: 50px;
-    /* Separate education section from the rest */
 }
 
 .education-section h2 {
     margin-bottom: 20px;
-    /* Space below the heading */
 }
 
 .education-section ul {
     list-style-type: none;
-    /* Remove default list styling */
     padding: 0;
 }
 
 .education-section li {
     background-color: #FFFFFF;
-    /* White background for list items */
     margin-bottom: 15px;
-    /* Space between list items */
     padding: 15px;
-    /* Padding inside list items */
     border-left: 4px solid #50E3C2;
-    /* Accent border using Secondary color */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    /* Subtle shadow for depth */
     transition: transform 0.2s;
-    /* Smooth transition for hover effect */
 }
 
 .education-section li:hover {
     transform: translateY(-5px);
-    /* Slight raise effect on hover */
 }
 
 .education-section li strong {
     color: #4A90E2;
-    /* Use primary color for degree and university */
     display: block;
-    /* Block display for better visual separation */
 }
 
-/* Responsive Design Adjustments */
 @media (max-width: 768px) {
-    .about p {
+    .about-top {
+        flex-direction: column-reverse;
+        
+    }
+
+    .about-text,
+    .about-image {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .about-image img {
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .about p,
+    .education-section {
         text-align: left;
-        /* Align text left on smaller screens for readability */
+        padding: 0;
     }
 }

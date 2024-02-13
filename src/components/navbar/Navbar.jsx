@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import './Navbar.css'
 import { Squash as Hamburger } from 'hamburger-react'
+import Logo from '../../assets/images/logo.svg';
+
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false)
@@ -14,7 +16,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="container">
         <div className="logo">
-          Afandi Afandiyev
+          <img src={Logo} alt="Logo" />
         </div>
         <div className="menu-icon" onClick={handleShowNavbar}>
           <Hamburger />
@@ -22,19 +24,21 @@ const Navbar = () => {
         <div className={`nav-elements ${showNavbar ? 'active' : ''}`}>
           <ul>
             <li>
-              <NavLink to="/">Home</NavLink>
+              <NavLink to="/">Əsas</NavLink>
             </li>
-            
+
             <li>
-              <NavLink to="/about">About</NavLink>
+              <NavLink to="/about">Haqqımda</NavLink>
             </li>
-            
+
             <li>
-              <NavLink to="/services">Services</NavLink>
+              <NavLink to="/services">Xidmətlər</NavLink>
             </li>
             <li>
-              <NavLink to="/contact">Contact</NavLink>
+              <NavLink to="/contact">Əlaqə</NavLink>
             </li>
+
+
           </ul>
         </div>
       </div>

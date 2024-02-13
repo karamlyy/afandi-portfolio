@@ -1,75 +1,168 @@
-/* Home.css */
-
 .home {
     padding: 40px 20px;
-    background-color: #F5F7FA;
-    /* Light Gray background */
     color: #4A4A4A;
-    /* Dark Gray text */
     text-align: center;
-    /* Center align the content for a modern look */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
 }
 
 .home h1 {
     color: #4A90E2;
-    /* Blue for the main heading */
     font-size: 2.5rem;
-    /* Larger font size for emphasis */
     margin-bottom: 20px;
-    /* Spacing below the heading */
 }
 
 .home p {
     font-size: 1.1rem;
-    /* Slightly larger font size for readability */
     max-width: 800px;
-    /* Limit the width of paragraphs for better readability */
     margin: 0 auto 20px;
-    /* Center the paragraphs with margin for spacing */
     line-height: 1.6;
-    /* Improve readability with increased line height */
 }
 
-/* Highlighted Text - Use for important phrases or calls to action */
 .home .highlight {
     color: #50E3C2;
-    /* Turquoise for highlighted text */
     font-weight: bold;
-    /* Make highlighted text bold */
 }
 
-/* Button - Use for primary call to action */
 .home .btn {
     display: inline-block;
-    /* Allows setting padding and margins */
-    background-color: #4A90E2;
-    /* Blue background for the button */
-    color: #FFFFFF;
-    /* White text for contrast */
+    
+    color: #15B87A;
     padding: 10px 20px;
-    /* Padding for size */
     border-radius: 5px;
-    /* Rounded corners for a modern look */
     text-decoration: none;
-    /* Remove underline from link */
     transition: background-color 0.3s;
-    /* Smooth transition for hover effect */
 }
 
 .home .btn:hover {
-    background-color: #3C7CC9;
-    /* Slightly darker blue on hover for feedback */
+    color: #549abb;
 }
 
-/* Responsive adjustments for smaller screens */
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-link {
+    margin: 0 15px;
+    color: #4A90E2;
+    font-size: 24px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+
+.social-link:hover,
+.social-link:focus {
+    color: #15B87A;
+    transform: rotate(360deg) scale(1.3);
+    text-decoration: none;
+}
+
+.home-image img {
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+
+    margin-bottom: 20px;
+}
+
+
+.send-message-form{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.send-message-form input[type="tel"] {
+    padding: 10px 15px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px; 
+    margin-right: 10px; 
+    outline: none; 
+    font-size: 1rem;
+    border: 0.5px solid rgb(140, 151, 171);
+    border-radius: 10px;
+}
+
+.send-message-form button {
+    padding: 10px 20px;
+    border: none; 
+    border-radius: 10px; 
+    background-color: #4CAF50; 
+    color: white; 
+    font-size: 1rem; 
+    cursor: pointer; 
+    outline: none; 
+    transition: background-color 0.3s; 
+}
+
+.send-message-form button:hover {
+    background-color: #45A049; 
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated-text {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@media (max-width: 1024px) {
+    .home-image img {
+        max-height: 300px;
+    }
+}
+
 @media (max-width: 768px) {
     .home h1 {
         font-size: 2rem;
-        /* Slightly smaller font size for small devices */
     }
 
     .home p {
         font-size: 1rem;
-        /* Adjust font size for readability on small devices */
+    }
+
+    .social-link {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home {
+        padding: 20px 10px;
+    }
+
+    .home p {
+        font-size: 0.9rem;
+    }
+
+    .home .btn {
+        padding: 8px 16px;
+    }
+
+    .social-links {
+        margin-top: 15px;
+    }
+
+    .social-link {
+        margin: 0 10px;
+        font-size: 18px;
     }
 }

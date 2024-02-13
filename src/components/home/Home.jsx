@@ -16,7 +16,7 @@ const Home = () => {
       </div>
 
       <div className="social-links">
-        <a href="https://www.facebook.com/efendi.efendiyev.1990/" target='_blank' className="social-link"><i class="fa-solid fa-phone"></i></a>
+        <a href="tel:+994777697303" target='_blank' className="social-link"><i class="fa-solid fa-phone"></i></a>
         <a href="https://www.facebook.com/efendi.efendiyev.1990/" target='_blank' className="social-link"><i className="fab fa-facebook-f"></i></a>
         {/* <a href="#" className="social-link"><i className="fab fa-x-twitter"></i></a> */}
         <a href="https://www.instagram.com/eefendiyev/" target='_blank' className="social-link"><i className="fab fa-instagram"></i></a>

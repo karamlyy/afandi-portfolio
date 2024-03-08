@@ -1,42 +1,26 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link
 import './Services.css';
-import ServiceImage from '../../assets/images/medical-service.jpg'
+import ServiceImage from '../../assets/images/medical-service.jpg';
+import ServiceImage1 from '../../assets/images/service1.jpg';
 
 const Services = () => {
     return (
         <div className="services">
             <h1>My Services</h1>
             <div className="service-list">
-                <div className="service-item">
+                {/* Wrap each service item with a Link */}
+                <Link to="/services/1" className="service-item">
                     <img src={ServiceImage} alt="Service 1" />
                     <h2>Service 1</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
-                </div>
-                <div className="service-item">
-                    <img src={ServiceImage} alt="Service 2" />
+                    <p>Lorem Ipsum is simply dummy text...</p>
+                </Link>
+                <Link to="/services/2" className="service-item">
+                    <img src={ServiceImage1} alt="Service 2" />
                     <h2>Service 2</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
-                </div>
-                <div className="service-item">
-                    <img src={ServiceImage} alt="Service 3" />
-                    <h2>Service 3</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
-                </div>
-                <div className="service-item">
-                    <img src={ServiceImage} alt="Service 4" />
-                    <h2>Service 4</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
-                </div>
-                <div className="service-item">
-                    <img src={ServiceImage} alt="Service 5" />
-                    <h2>Service 5</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
-                </div>
-                <div className="service-item">
-                    <img src={ServiceImage} alt="Service 6" />
-                    <h2>Service 6</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
-                </div>
+                    <p>Lorem Ipsum is simply dummy text...</p>
+                </Link>
+                {/* Repeat for other services */}
             </div>
         </div>
     );
